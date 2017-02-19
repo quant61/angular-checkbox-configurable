@@ -1,0 +1,22 @@
+{
+  "name": "angular-checkbox-configurable",
+  "version": "0.0.1",
+  "authors": [
+    "quant61"
+  ],
+  "description": "angular checkbox with multiple states and customzable behavior",
+  "main": "checkbox_configurable.js",
+  "keywords": [
+    "checkbox",
+    "multi-stage",
+    "configurable"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "bower_components"
+  ],
+  "dependencies": {
+    "fontawesome": "~4.3.0",
+    "angular": "~1.5.0"
+  }
+}
