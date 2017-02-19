@@ -32,26 +32,8 @@ var app = angular.module('app', [ 'angular-checkbox-configurable' ]);
 </checkbox-configurable>
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+TODO
+-----
+- [ ] imporove readme and directive itself
+- [ ] choose another name - I am not sure about current name, so help me choose better or leave that
+- [ ] add examples
