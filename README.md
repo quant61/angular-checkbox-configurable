@@ -20,10 +20,11 @@ Features
 
 Example
 -----
+Enable the module in your app
 ```javascript
 var app = angular.module('app', [ 'checkboxConfigurable' ]);
 ```
-
+Add in html
 ```html
 <checkbox-configurable 
     update-status="toggleState(item)"
@@ -31,6 +32,28 @@ var app = angular.module('app', [ 'checkboxConfigurable' ]);
     ng-model="item.status">
 </checkbox-configurable>
 ```
+Then you can use custom logic for getting icon class and updating status
+```javascript
+  $scope.getCheckboxClass = function(item){
+    if(item.$pending){
+      return "fa fa-repeat";
+    } else {
+      return item.status? "fa fa-check":"fa fa-minus";
+    }
+  }
+  
+  $scope.toggleState = function(item){
+    if(!item.$pending){
+      item.$pending = true;
+      // simulate network delay with timeout
+      $timeout(function(){
+        item.status = !item.status;
+        item.$pending = false;
+      }, 2000 * Math.random());
+    }
+  }
+  ```
+
 
 TODO
 -----
