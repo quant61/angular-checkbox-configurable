@@ -21,7 +21,7 @@ Features
 Example
 -----
 ```javascript
-var app = angular.module('app', [ 'angular-checkbox-configurable' ]);
+var app = angular.module('app', [ 'checkboxConfigurable' ]);
 ```
 
 ```html

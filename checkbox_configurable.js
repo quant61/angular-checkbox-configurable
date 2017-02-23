@@ -3,7 +3,7 @@
  */
 'use strict';
 
-angular.module('checkboxConfigurable')
+angular.module('checkboxConfigurable', [])
     .directive('checkboxConfigurable', function () {
     return {
         template: '<i class="{{ _getClass() }} clickable" ng-click="_updateStatus()"></i>',
